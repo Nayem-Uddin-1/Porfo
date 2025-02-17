@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+
+/* ==========NavBar Section========== */
+
+ 
+@media (min-width: 10px) and (max-width: 640px) {
+    .logos {
+       display: none;
+    }
+  }
+
+
+
+/* ==========Banner Section========== */
+
+ 
+@media (min-width: 640px) and (max-width: 730px) {
+   .banner .text {
+       width: 300px;
+    }
+  }
+@media (min-width: 10px) and (max-width: 640px) {
+   .banner .text {
+       width: 250px;
+    }
+  }
