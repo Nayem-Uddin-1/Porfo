@@ -5,7 +5,8 @@ const Banner = () => {
     <section className="flex banner text-white items-center   p-10 rounded-2xl   max-w-7xl mx-auto mt-10">
 
       <div className="max-w-md text text-white">
-        <h1 className="text-4xl font-bold   !text-white">Hi, I am Nayem</h1>
+        <h1 className="text-4xl font-bold   text-green-600">Hello, I'm Nayem</h1>
+        <h1 className="text-[60px] -tracking-2 font-bold   text-white">Web Developer</h1>
         <p className="mt-4 text-white">
           I am a passionate developer specializing in modern web technologies.
           Crafting responsive, user-friendly interfaces is my expertise. Let's

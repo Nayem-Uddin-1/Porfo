@@ -10,6 +10,7 @@ import Skills from './Component/Skills'
 import Project from './Component/Project'
 
 import { Element } from 'react-scroll';
+import ContactMe from './Component/ContactMe'
 
 
 
@@ -35,7 +36,9 @@ function App() {
       <Element name="project" className="">
         <Project />
       </Element>
-
+    
+        <ContactMe />
+       
       
 
 

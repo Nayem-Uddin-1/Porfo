@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+   --color-primary: #101018;
+ 
+ }
+
 
 /* ==========NavBar Section========== */
 

@@ -69,7 +69,7 @@ function NavBar() {
                         </div>
                         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                             <div className="flex shrink-0 items-center">
-                                <h1 className='text-white text-2xl text-center'>Logo</h1>
+                                <h1 className='text-white text-2xl text-center'>Nayem Uddin</h1>
                             </div>
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
@@ -117,13 +117,14 @@ function NavBar() {
                         <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                             <div className="flex items-center gap-4">
                                 <div className="flex logos gap-2">
-                                    <FaFacebook className="text-gray-700 hover:text-black transition" />
-                                    <FaTwitter className="text-gray-700 hover:text-black transition" />
-                                    <FaLinkedin className="text-gray-700 hover:text-black transition" />
+                                    <Link to="/">  <FaFacebook className="  text-[25px] text-white hover:text-blue-500 transition" />
+                                    </Link>
+                                    <FaTwitter className="text-[25px] text-white hover:text-blue-500 transition" />
+                                    <FaLinkedin className="text-[25px] text-white hover:text-blue-500 transition" />
                                 </div>
 
-                                <button className="border border-gray-500 px-4 py-2 rounded-lg text-gray-700 hover:border-gray-700 hover:text-black transition">
-                                    Comment
+                                <button className="border border-green-500 px-4 py-2  text-white hover:border-gray-700 hover:bg-green-500 font-bold transition">
+                                    Contact
                                 </button>
                             </div>
 
@@ -141,19 +142,19 @@ function NavBar() {
 
                             <a
                                 href="#"
-                                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-500 border hover:text-white"
                             >
                                 Home
                             </a>
                             <a
                                 href="#"
-                                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-500 hover:text-white"
                             >
                                 Skills
                             </a>
                             <a
                                 href="#"
-                                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-500 hover:text-white"
                             >
                                 Projects
                             </a>
