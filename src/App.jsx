@@ -18,7 +18,12 @@ function App() {
 
   return (
     <>
+ 
 
+
+ <Element name="home" className="">
+
+       
       <NavBar />
       <Banner />
 
@@ -29,7 +34,17 @@ function App() {
       <Element name="project" className="">
         <Project />
       </Element>
+      
+      <Element name="contact" className="">
       <ContactMe />
+      </Element>
+
+
+
+
+  </Element>
+
+
 
 
 

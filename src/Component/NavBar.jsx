@@ -67,13 +67,13 @@ function NavBar() {
                                 </svg>
                             </button>
                         </div>
-                        
+
                         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
 
                             <div className="flex shrink-0 items-center">
                                 <h1 className='text-white text-2xl text-center logo-nayem'>Nayem Uddin</h1>
                             </div>
-                            
+
                             <div className="hidden sm:ml-6 sm:block">
 
                                 <div className="flex space-x-4">
@@ -83,7 +83,16 @@ function NavBar() {
                                         href="#"
                                         className="rounded px-3 py-2 text-sm font-medium text-gray-300 transition-all duration-600 hover:bg-green-500 hover:text-white"
                                     >
-                                        Home
+
+                                        <Link
+                                            to="home"  // Target section
+                                            smooth={true} // Smooth scroll effect
+                                            duration={500} // Duration of the scroll
+                                            className="text-white"
+                                        >
+                                            Home
+                                        </Link>
+
                                     </a>
                                     <a
                                         href="#"
@@ -105,21 +114,21 @@ function NavBar() {
                                         className="rounded px-3 py-2 text-sm font-medium text-gray-300 transition-all duration-600 hover:bg-green-500 hover:text-white"
                                     >
 
-<Link
+                                        <Link
                                             to="project"  // Target section
                                             smooth={true} // Smooth scroll effect
                                             duration={500} // Duration of the scroll
                                             className="text-white"
                                         >
-                                             Projects
+                                            Projects
                                         </Link>
-                                       
+
                                     </a>
 
                                 </div>
 
                             </div>
-                            
+
                         </div>
 
 
@@ -134,7 +143,17 @@ function NavBar() {
                                 </div>
 
                                 <button className="border border-green-500 cursor-pointer transition-all duration-700 rounded  px-4 py-2  text-white hover:border-gray-700 hover:bg-green-500 font-bold ">
-                                    Contact
+
+                                    <Link
+                                        to="contact"  // Target section
+                                        smooth={true} // Smooth scroll effect
+                                        duration={500} // Duration of the scroll
+                                        className="text-white"
+                                    >
+                                        Contact
+                                    </Link>
+
+
                                 </button>
                             </div>
 
@@ -155,19 +174,40 @@ function NavBar() {
                                 href="#"
                                 className="block  px-3 py-2 text-base font-medium text-white hover:bg-green-500  "
                             >
-                                Home
+                                <Link
+                                    to="home"  // Target section
+                                    smooth={true} // Smooth scroll effect
+                                    duration={500} // Duration of the scroll
+                                    className="text-white"
+                                >
+                                    Home
+                                </Link>
                             </a>
                             <a
                                 href="#"
                                 className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-green-500 hover:text-white"
                             >
-                                Skills
+                                <Link
+                                    to="skills"  // Target section
+                                    smooth={true} // Smooth scroll effect
+                                    duration={500} // Duration of the scroll
+                                    className="text-white"
+                                >
+                                    Skills
+                                </Link>
                             </a>
                             <a
                                 href="#"
                                 className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-green-500 hover:text-white"
                             >
-                                Projects
+                                <Link
+                                    to="project"  // Target section
+                                    smooth={true} // Smooth scroll effect
+                                    duration={500} // Duration of the scroll
+                                    className="text-white"
+                                >
+                                    Projects
+                                </Link>
                             </a>
 
 
