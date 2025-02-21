@@ -19,7 +19,7 @@ function NavBar() {
                             <button onClick={() => setShowHide(!showHide)
                             }
                                 type="button"
-                                className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
+                                className="relative inline-flex items-center justify-center rounded-md p-2 text-green-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-green-500 focus:outline-hidden focus:ring-inset"
                                 aria-controls="mobile-menu"
                                 aria-expanded="false"
                             >
@@ -69,7 +69,7 @@ function NavBar() {
                         </div>
                         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                             <div className="flex shrink-0 items-center">
-                                <h1 className='text-white text-2xl text-center'>Nayem Uddin</h1>
+                                <h1 className='text-white text-2xl text-center logo-nayem'>Nayem Uddin</h1>
                             </div>
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
@@ -132,6 +132,7 @@ function NavBar() {
                         </div>
                     </div>
                 </div>
+
                 {/* Mobile menu, show/hide based on menu state. */}
                 <div className="sm:hidden " id="mobile-menu">
 
@@ -142,19 +143,19 @@ function NavBar() {
 
                             <a
                                 href="#"
-                                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-500 border hover:text-white"
+                                className="block  px-3 py-2 text-base font-medium text-white hover:bg-green-500  "
                             >
                                 Home
                             </a>
                             <a
                                 href="#"
-                                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-500 hover:text-white"
+                                className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-green-500 hover:text-white"
                             >
                                 Skills
                             </a>
                             <a
                                 href="#"
-                                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-500 hover:text-white"
+                                className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-green-500 hover:text-white"
                             >
                                 Projects
                             </a>
@@ -167,6 +168,8 @@ function NavBar() {
 
 
                 </div>
+
+
             </nav>
         </>
     )

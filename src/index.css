@@ -2,6 +2,8 @@
 
 @theme {
    --color-primary: #101018;
+   --color-secondary: #313131;
+   --color-bar-color: #0c0c0e;
  
  }
 
@@ -9,6 +11,11 @@
 /* ==========NavBar Section========== */
 
  
+@media (min-width: 320px) and (max-width: 420px) {
+    .logo-nayem {
+       display: none;
+    }
+  }
 @media (min-width: 10px) and (max-width: 640px) {
     .logos {
        display: none;
@@ -20,6 +27,44 @@
 /* ==========Banner Section========== */
 
  
+@media (min-width: 320px) and (max-width: 420px) {
+   .banner .text .heading  {
+      font-size: 45px;
+      line-height: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+   .banner .text .text-para  {
+      text-align: center;
+    }
+  }
+
+@media (min-width: 421px) and (max-width: 520px) {
+   .banner   {
+      
+    
+      flex-direction: column-reverse;
+      
+    }
+   .banner .banner-image  {
+      
+    
+      margin-left: 0;
+      padding-bottom: 30px;
+      
+    }
+   .banner .text .heading  {
+      font-size: 45px;
+      line-height: 50px;
+      padding-top: 20px;
+      
+    }
+   .banner .text .text-para  {
+      text-align: center;
+    }
+  }
+
+
 @media (min-width: 640px) and (max-width: 730px) {
    .banner .text {
        width: 300px;
@@ -30,3 +75,19 @@
        width: 250px;
     }
   }
+
+
+
+
+
+/* ==========Banner Section========== */
+
+ 
+@media (min-width: 320px) and (max-width: 420px) {
+   section .skills-logo-text  {
+      /* display: none; */
+      font-size: 15px;
+    }
+   
+  }
+ 

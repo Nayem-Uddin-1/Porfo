@@ -9,22 +9,38 @@ export default function Projects() {
     ];
 
     return (
-        <section className="py-12  px-6  text-white">
-            <div className="max-w-5xl mx-auto text-center">
+        <section className="py-12  px-6   text-white">
+          
+          <div className="project max-w-7xl mx-auto py-20">
+              
+          <div className="mx-auto text-center">
                 <h2 className="text-3xl font-bold text-teal-400">Projects</h2>
                 <p className="text-gray-400 mt-2">Here are some of my latest projects that showcase my design and development skills.</p>
             </div>
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6 mt-10 max-w-6xl mx-auto">
+
+            
+            <div className="grid relative  md:grid-cols-3 sm:grid-cols-2 gap-6 overflow-hidden mt-10 max-w-7xl mx-auto ">
                 {projects.map((project, index) => (
-                    <div key={index} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                        <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-                        <div className="p-4">
+                    <div key={index} className="cursor-pointer rounded-lg overflow-hidden shadow-lg hover:shadow-xl  group ">
+
+                        <div className="w-full  h-[250px]">  
+                              <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                        </div>
+                       
+
+
+                        <div className="p-4 bg-secondary h-[120px]">
                             <h3 className="text-xl font-semibold text-teal-300">{project.title}</h3>
                             <p className="text-gray-400 mt-2">{project.description}</p>
                         </div>
+
+
                     </div>
                 ))}
             </div>
+
+          </div>
+
         </section>
     );
 }
