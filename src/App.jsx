@@ -1,8 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Test from './Component/Test'
+
 
 import NavBar from './Component/NavBar'
 import Banner from './Component/Banner'
@@ -16,15 +13,11 @@ import ContactMe from './Component/ContactMe'
 
 
 
-
 function App() {
 
 
   return (
     <>
-
-
-
 
       <NavBar />
       <Banner />
@@ -36,10 +29,9 @@ function App() {
       <Element name="project" className="">
         <Project />
       </Element>
-    
-        <ContactMe />
-       
-      
+      <ContactMe />
+
+
 
 
     </>

@@ -1,23 +1,27 @@
 import React from 'react'
 
+
+
 function ContactMe() {
     return (
         <><section className="py-24 bg-gray">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-2 grid-cols-1">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
+
+
                     <div className="lg:mb-0 mb-10">
                         <div className="group w-full h-full">
                             <div className="relative h-full">
                                 <img
-                                    src="https://pagedone.io/asset/uploads/1696488602.png"
+                                    src="https://img.freepik.com/free-photo/abstract-background-with-low-poly-design_1048-8478.jpg?t=st=1740156146~exp=1740159746~hmac=587f5eac200dd821bd7c29c09c8ef7cf6a7a8e6e566bb1cd35c3ada4bd0e2ea6&w=900"
                                     alt="ContactUs tailwind section"
-                                    className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover"
+                                    className="w-full h-full bg-blend-multiply bg-indigo-700 object-cover"
                                 />
                                 <h1 className="font-manrope text-white text-4xl font-bold leading-10 absolute top-11 left-11">
-                                    Contact us
+                                    Contact me
                                 </h1>
                                 <div className="absolute bottom-0 w-full lg:p-11 p-5">
-                                    <div className="bg-white rounded-lg p-6 block">
+                                    <div className="bg-black p-6 block">
                                         <a href="javascript:;" className="flex items-center mb-6">
                                             <svg
                                                 width={30}
@@ -34,8 +38,8 @@ function ContactMe() {
                                                     strokeLinejoin="round"
                                                 />
                                             </svg>
-                                            <h5 className="text-black text-base font-normal leading-6 ml-5">
-                                                470-601-1911
+                                            <h5 className="text-white text-5 font-bold text-base leading-6 ml-5">
+                                                0199972 * * *
                                             </h5>
                                         </a>
                                         <a href="javascript:;" className="flex items-center mb-6">
@@ -53,8 +57,8 @@ function ContactMe() {
                                                     strokeLinecap="round"
                                                 />
                                             </svg>
-                                            <h5 className="text-black text-base font-normal leading-6 ml-5">
-                                                Pagedone1234@gmail.com
+                                            <h5 className="text-white text-5 font-bold  text-base leading-6 ml-5">
+                                                nayem9339@gmail.com
                                             </h5>
                                         </a>
                                         <a href="javascript:;" className="flex items-center">
@@ -76,8 +80,8 @@ function ContactMe() {
                                                     strokeWidth={2}
                                                 />
                                             </svg>
-                                            <h5 className="text-black text-base font-normal leading-6 ml-5">
-                                                654 Sycamore Avenue, Meadowville, WA 76543
+                                            <h5 className="text-white font-bold  text-5   leading-6 ml-5">
+                                                Gazipur, Salna bazar, Shimultoli Road
                                             </h5>
                                         </a>
                                     </div>
@@ -85,27 +89,29 @@ function ContactMe() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-gray-50 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
-                        <h2 className="text-indigo-600 font-manrope text-4xl font-semibold leading-10 mb-11">
-                            Send Us A Message
+
+
+                    <div className="bg-black p-5 lg:p-11 ">
+                        <h2 className="text-white font-manrope text-4xl font-semibold leading-10 mb-11">
+                            Send Message
                         </h2>
                         <input
                             type="text"
-                            className="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10"
+                            className="w-full h-12 text-white placeholder-white  shadow-sm bg-transparent text-lg font-normal leading-7  border-b-1 border-gray-200 focus:outline-none mb-10"
                             placeholder="Name"
                         />
                         <input
                             type="text"
-                            className="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10"
+                            className="w-full h-12 text-white placeholder-white shadow-sm bg-transparent text-lg font-normal leading-7  border-b-1 border-gray-200 focus:outline-none  mb-10"
                             placeholder="Email"
                         />
                         <input
                             type="text"
-                            className="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10"
+                            className="w-full h-12 text-white placeholder-white shadow-sm bg-transparent text-lg font-normal leading-7 border-b-1 border-gray-200 focus:outline-none mb-10"
                             placeholder="Phone"
                         />
                         <div className="mb-10">
-                            <h4 className="text-gray-500 text-lg font-normal leading-7 mb-4">
+                            <h4 className="text-white text-lg font-normal leading-7 mb-4">
                                 Preferred method of communication
                             </h4>
                             <div className="flex">
@@ -118,9 +124,9 @@ function ContactMe() {
                                     />
                                     <label
                                         htmlFor="radio-group-1"
-                                        className="flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6"
+                                        className="flex items-center cursor-pointer text-white text-base font-normal leading-6"
                                     >
-                                        <span className="border border-gray-300 rounded-full mr-2 w-4 h-4  ml-2 " />{" "}
+                                        <span className="border border-white rounded-full mr-2 w-4 h-4  ml-2 " />{" "}
                                         Email
                                     </label>
                                 </div>
@@ -133,23 +139,25 @@ function ContactMe() {
                                     />
                                     <label
                                         htmlFor="radio-group-2"
-                                        className="flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6"
+                                        className="flex items-center cursor-pointer text-white text-base font-normal leading-6"
                                     >
-                                        <span className="border border-gray-300  rounded-full mr-2 w-4 h-4  ml-2 " />{" "}
+                                        <span className="border border-white  rounded-full mr-2 w-4 h-4  ml-2 " />{" "}
                                         Phone
                                     </label>
                                 </div>
                             </div>
                         </div>
-                        <input
+                        <textarea
                             type="text"
-                            className="w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10"
+                            className="w-[70%] flex mx-auto h-12 text-white placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 border border-gray-200 focus:outline-none pl-4 mb-10"
                             placeholder="Message"
                         />
-                        <button className="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 hover:bg-indigo-800 bg-indigo-600 shadow-sm">
+                        <button className= " flex items-center justify-center w-2/4 mx-auto h-12 text-white text-base font-semibold leading-6 rounded  transition-all duration-700 hover:bg-green-600 border border-green-500 shadow-sm">
                             Send
                         </button>
                     </div>
+
+
                 </div>
             </div>
         </section>

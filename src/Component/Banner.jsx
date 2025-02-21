@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className="flex banner text-white items-center   p-10 rounded-2xl   max-w-7xl mx-auto mt-10">
+    <section className="flex pt-[100px] banner text-white items-center   p-10 rounded-2xl   max-w-7xl mx-auto mt-10">
 
       <div className="max-w-md text text-white">
         <h2 className="text-4xl font-bold   text-green-600">Hello, I'm Nayem</h2>
@@ -12,6 +12,10 @@ const Banner = () => {
           Crafting responsive, user-friendly interfaces is my expertise. Let's
           build something amazing together!
         </p>
+
+        <button className="border mt-4 border-green-500 cursor-pointer transition-all duration-700 rounded  px-4 py-2  text-white hover:bg-primary-500 bg-green-500 hover:bg-primary font-bold ">
+          DOWNLOAD CV
+        </button>
       </div>
 
       <div className=" banner-image ml-[250px]">
