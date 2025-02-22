@@ -13,7 +13,7 @@ const Banner = () => {
           build something amazing together!
         </p>
 
-        <button className="border mt-10 border-green-500 cursor-pointer transition-all duration-700 rounded  px-4 py-2  text-white hover:bg-primary-500 bg-green-500 font-bold ">
+        <button className="border btn mt-10 border-green-500 cursor-pointer transition-all duration-700 rounded  px-4 py-2  text-white hover:bg-primary-500 bg-green-500 font-bold ">
           DOWNLOAD CV
         </button>
       </div>

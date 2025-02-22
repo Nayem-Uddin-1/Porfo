@@ -4,6 +4,7 @@
    --color-primary: #101018;
    --color-secondary: #313131;
    --color-bar-color: #0c0c0e;
+   --color-dark-color: #00000e;
  
  }
 
@@ -28,15 +29,26 @@
 
  
 @media (min-width: 320px) and (max-width: 420px) {
-   .banner .text .heading  {
-      font-size: 45px;
-      line-height: 50px;
+   .banner    {
+      flex-direction: column-reverse;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+    }
+    .banner .text .heading  {
+      font-size: 50px;
+      line-height: 55px;
       padding-top: 20px;
-      padding-bottom: 20px;
+      
     }
-   .banner .text .text-para  {
-      text-align: center;
+    .banner .banner-image  {
+      
+    
+      margin-left: 0;
+      padding-bottom: 30px;
+      
     }
+   
   }
 
 @media (min-width: 421px) and (max-width: 520px) {
@@ -44,8 +56,11 @@
       
     
       flex-direction: column-reverse;
+      padding-top: 60px;
+      padding-bottom: 60px;
       
     }
+   
    .banner .banner-image  {
       
     
@@ -59,9 +74,32 @@
       padding-top: 20px;
       
     }
-   .banner .text .text-para  {
-      text-align: center;
+    
+  }
+
+@media (min-width: 521px) and (max-width: 639px) {
+   .banner   {
+      
+    
+      flex-direction: column-reverse;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      
     }
+   
+   .banner .banner-image  {     
+    
+      margin-left: 0;
+      padding-bottom: 30px;
+      
+    }
+   .banner .text .heading  {
+      font-size: 55px;
+      line-height: 60px;
+      padding-top: 20px;
+      
+    }
+    
   }
 
 
@@ -80,14 +118,58 @@
 
 
 
-/* ==========Banner Section========== */
+/* ==========Skills Section========== */
 
  
 @media (min-width: 320px) and (max-width: 420px) {
+   section .parent  {
+    
+      flex-direction: column;
+      gap: 5px;
+    }
+   section .parent .icon  {
+    
+      font-size: 35px;
+    }
    section .skills-logo-text  {
       /* display: none; */
-      font-size: 15px;
+      font-size: 13px;
     }
    
   }
+
+
+  @media (min-width: 421px) and (max-width: 540px) {
+    section .parent  {
+     
+       flex-direction: column;
+       gap: 5px;
+     }
+    section .parent .icon  {
+     
+       font-size: 40px;
+     }
+    section .skills-logo-text  {
+       /* display: none; */
+       font-size: 20px;
+     }
+    
+   }
+ 
+  @media (min-width: 521px) and (max-width: 639px) {
+    section .parent  {
+     
+       flex-direction: column;
+       gap: 5px;
+     }
+    section .parent .icon  {
+     
+       font-size: 70px;
+     }
+    section .skills-logo-text  {
+       /* display: none; */
+       font-size: 25px;
+     }
+    
+   }
  

@@ -174,7 +174,7 @@ function NavBar() {
                                 href="#"
                                 className="block  px-3 py-2 text-base font-medium text-white hover:bg-green-500  "
                             >
-                                <Link
+                                <Link onClick={()=>setShowHide(!showHide)}
                                     to="home"  // Target section
                                     smooth={true} // Smooth scroll effect
                                     duration={500} // Duration of the scroll
@@ -187,7 +187,7 @@ function NavBar() {
                                 href="#"
                                 className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-green-500 hover:text-white"
                             >
-                                <Link
+                                <Link onClick={()=>setShowHide(!showHide)}
                                     to="skills"  // Target section
                                     smooth={true} // Smooth scroll effect
                                     duration={500} // Duration of the scroll
@@ -196,11 +196,11 @@ function NavBar() {
                                     Skills
                                 </Link>
                             </a>
-                            <a
+                            <a 
                                 href="#"
                                 className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-green-500 hover:text-white"
                             >
-                                <Link
+                                <Link onClick={()=>setShowHide(!showHide)}
                                     to="project"  // Target section
                                     smooth={true} // Smooth scroll effect
                                     duration={500} // Duration of the scroll

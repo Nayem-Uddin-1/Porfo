@@ -1,8 +1,34 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser';
+
 
 
 
 function ContactMe() {
+    
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_fp1de6b', 'template_i1dtt1i', 
+        form.current, { 
+             publicKey: 'b1H9TEM68buFV25Yo',
+             
+
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    };
+    
+
     return (
         <><section className="py-24 bg-gray">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -91,70 +117,38 @@ function ContactMe() {
                     </div>
 
 
-                    <div className="bg-black p-5 lg:p-11 ">
+                    <div className="bg-black  border border-green-500 pl-[50px] p-5 lg:p-11 ">
                         <h2 className="text-white font-manrope text-4xl font-semibold leading-10 mb-11">
                             Send Message
                         </h2>
-                        <input
-                            type="text"
-                            className="w-full h-12 text-white placeholder-white  shadow-sm bg-transparent text-lg font-normal leading-7  border-b-1 border-gray-200 focus:outline-none mb-10"
-                            placeholder="Name"
-                        />
-                        <input
-                            type="text"
-                            className="w-full h-12 text-white placeholder-white shadow-sm bg-transparent text-lg font-normal leading-7  border-b-1 border-gray-200 focus:outline-none  mb-10"
-                            placeholder="Email"
-                        />
-                        <input
-                            type="text"
-                            className="w-full h-12 text-white placeholder-white shadow-sm bg-transparent text-lg font-normal leading-7 border-b-1 border-gray-200 focus:outline-none mb-10"
-                            placeholder="Phone"
-                        />
-                        <div className="mb-10">
-                            <h4 className="text-white text-lg font-normal leading-7 mb-4">
-                                Preferred method of communication
-                            </h4>
-                            <div className="flex">
-                                <div className="flex items-center mr-11">
-                                    <input
-                                        id="radio-group-1"
-                                        type="radio"
-                                        name="radio-group"
-                                        className="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"
-                                    />
-                                    <label
-                                        htmlFor="radio-group-1"
-                                        className="flex items-center cursor-pointer text-white text-base font-normal leading-6"
-                                    >
-                                        <span className="border border-white rounded-full mr-2 w-4 h-4  ml-2 " />{" "}
-                                        Email
-                                    </label>
-                                </div>
-                                <div className="flex items-center">
-                                    <input
-                                        id="radio-group-2"
-                                        type="radio"
-                                        name="radio-group"
-                                        className="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"
-                                    />
-                                    <label
-                                        htmlFor="radio-group-2"
-                                        className="flex items-center cursor-pointer text-white text-base font-normal leading-6"
-                                    >
-                                        <span className="border border-white  rounded-full mr-2 w-4 h-4  ml-2 " />{" "}
-                                        Phone
-                                    </label>
-                                </div>
+
+                        <form ref={form} onSubmit={sendEmail}>
+                           
+                           <div className="name flex flex-col gap-2">
+                           <label className='text-white mr-4'>Name</label>
+                           <input className='border pl-2 py-1 rounded w-90 focus:outline-none text-white border-white border-b-1' required type="text" name="user_name" />
+                           </div>
+                            
+                            <div className="email flex flex-col gap-2 mt-4">
+
+                            <label className='text-white  mr-[21px]'>Email</label>
+                            <input className='border pl-2 py-1 rounded w-90 focus:outline-none border-b-1 text-white  border-white ' required type="email" name="user_email" />
+
                             </div>
-                        </div>
-                        <textarea
-                            type="text"
-                            className="w-[70%] flex mx-auto h-12 text-white placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 border border-gray-200 focus:outline-none pl-4 mb-10"
-                            placeholder="Message"
-                        />
-                        <button className= " flex items-center justify-center w-2/4 mx-auto h-12 text-white text-base font-semibold leading-6 rounded  transition-all duration-700 hover:bg-green-600 border border-green-500 shadow-sm">
-                            Send
-                        </button>
+                          
+                            <div className="text-area mt-4 flex flex-col gap-2">
+                            <label className='text-white mr-3 '>Message</label>
+                            <textarea  className='border pl-2 py-1 rounded w-90 text-white border-white' required name="message" />
+                        
+                            </div>
+
+                            <div className="button mt-4 flex items-center">
+                                
+                            <input className='border px-5 py-2 w-90 rounded transition-all duration-700 cursor-pointer border-green-500 hover:bg-green-600 bg-green-500 text-white' type="submit" value="Send" />
+                            </div>
+                           
+                        </form>
+
                     </div>
 
 

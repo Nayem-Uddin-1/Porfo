@@ -25,7 +25,7 @@ const Skills = () => {
 
   return (
     <section className="py-16 text-center text-white">
-      <div className="max-w-7xl bg-secondary pt-20 mx-auto px-6">
+      <div className="max-w-7xl bg-dark-color pt-20 mx-auto px-6">
         <h2 className="text-4xl font-bold  mb-4">Skills</h2>
         <p className="  text-lg mb-8">
           Here are some of the technologies I have experience with:
@@ -39,8 +39,8 @@ const Skills = () => {
           ))} */}
  
             {icons.map((item, index) => (
-              <div className="border p-5 md:text-[80px] sm:text-[50px] text-green-500 flex gap-10 items-center " key={index}>
-                <div className="icon cursor-pointer">
+              <div className="border rounded parent p-5 md:text-[80px] sm:text-[50px] text-green-500 flex gap-10 items-center " key={index}>
+                <div className="icon cursor-pointer text-green-500 ">
               
                 {item.icon}
 

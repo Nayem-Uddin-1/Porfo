@@ -14,8 +14,8 @@ export default function Projects() {
           <div className="project max-w-7xl mx-auto py-20">
               
           <div className="mx-auto text-center">
-                <h2 className="text-3xl font-bold text-teal-400">Projects</h2>
-                <p className="text-gray-400 mt-2">Here are some of my latest projects that showcase my design and development skills.</p>
+                <h2 className="text-3xl font-bold text-white text-[50px]">Projects</h2>
+                <p className="text-white text-[25px] mt-2">Here are some of my latest projects that showcase my design and development skills.</p>
             </div>
 
             
@@ -29,7 +29,7 @@ export default function Projects() {
                        
 
 
-                        <div className="p-4 bg-secondary h-[120px]">
+                        <div className="p-4 bg-dark-color h-[120px]">
                             <h3 className="text-xl font-semibold text-teal-300">{project.title}</h3>
                             <p className="text-gray-400 mt-2">{project.description}</p>
                         </div>
